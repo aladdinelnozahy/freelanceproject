@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#colo{
+    background-color:rgba(0, 0, 0, 0.65); 
+}
+body{  
+    
+    /* color: white; */
+    height: 100%;
+    /* background: rgb(4, 76, 109);  */
+    background: rgb(9, 226, 136);
+    background: linear-gradient(0deg, rgb(45, 110, 79) 10%, rgb(67, 130, 160) 90%); 
+    /* background-size: 100%; */
+    /* font-family: 'Amiri', serif;
+    font-size: 1.5rem; */
+    text-align: center;
+}
+.mini{ 
+    border: solid 1px white;
+    border-radius: 30px ;
+    margin:20px auto;
+    width: 80%;
+    padding: 10px;
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+
+}
+#a{
+    padding: 3px;
+    color: rgb(14, 5, 5);
+}
+
+footer{
+    background-color: rgba(154, 154, 155, 0.587);
+    text-align: center;
+    font-family: 'Amiri', serif;
+    font-size: 15px;
+    padding-top: 12px;
+    overflow: auto;
+    color: black;
+}
+
+        
+
+#imgsize{
+    width: 10%;
+    margin-top: 20%;
+    border: solid 5px white;
+    border-radius: 100%;
+}
+h1{
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 5pxrgb(250 174 28);
+
+}
+
+#fix{
+    float: inherit;
+}
+#portofolio{
+    background-image: url("/media/cover.jpg");
+    text-align: center;
+    text-shadow: 1px 1px #fff;
+
+    
+    
+
+}
+.center{
+    height: 500px;
+    
+}
+.accordion{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    font-family: 'Oxygen', sans-serif;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    
+}
+#goup{
+    width: 100PX;
+    color: ;
+    margin: 20px;
+}
+.card-header{
+    /* background-color:rgb(96, 177, 214) ; */
+    /* background: linear-gradient(0deg, rgb(89, 158, 125) -0%, rgb(96, 177, 214) 100%);  */
+
+}
+.card{
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+}
+.btn-warning{
+    color: #212529;
+    background-color: #2ea8a8;
+    border-color: #0d1412;
+}
+.accordion>.card>.card-header {
+    background-color: rgba(0, 0, 0, 0.65);;
+    border-radius: 0;
+    margin-bottom: -1px;

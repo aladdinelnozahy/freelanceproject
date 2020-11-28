@@ -1,0 +1,73 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+        background: rgb(9, 226, 136);
+        background: linear-gradient(0deg, rgb(48, 151, 101) 0%, rgb(4, 76, 109) 100%);
+        background-size: 100%;
+        font-family: 'Amiri', serif;
+        font-size: 20px;
+        
+
+}
+#colo{
+    background-color:rgb(0, 0, 0); ;
+
+    
+}
+
+.card {
+    border-radius: 30px;
+    /* background-color: rgb(0 0 0 / 0%); */
+    color: black;
+}
+.wow{
+    background-color:rgba(0, 0, 0, 0.281); 
+
+    color: white;
+    /* border: 5px solid rgba(218, 233, 227, 0.63);
+    /* margin-top: 100px; */
+    margin: 10.5px auto;
+    border-radius: 100px  ; 
+
+    /* padding: 25px; */
+    font-family: 'Amiri', serif;
+    font-size: 20px;
+    width: 500px;
+  }
+.formcenter {
+
+    padding: 10%;
+
+}
+#dash{
+    background-color: rgb(247 247 247) ;
+    color: black;
+}
+#fullwidth{
+    margin-top: 10px;
+    width: 100%;
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    border-color: rgb(255 255 255);
+}
+.form-group{
+    padding: 8px;
+}
+footer{
+    background-color: rgba(220, 220, 224, 0.587);
+    text-align: center;
+    font-family: 'Amiri', serif;
+    font-size: 15px;
+    padding-top: 12px;
+    overflow: auto;
+}
+#a{
+    padding: 3px;
+    color: rgb(14, 5, 5);
+}
