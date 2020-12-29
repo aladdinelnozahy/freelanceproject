@@ -50,7 +50,7 @@ footer{
 #imgsize{
     width: 10%;
     margin-top: 20%;
-    border: solid 5px white;
+    border: solid 3px white;
     border-radius: 100%;
 }
 h1{
@@ -86,14 +86,10 @@ h1{
 }
 #goup{
     width: 100PX;
-    color: ;
+    
     margin: 20px;
 }
-.card-header{
-    /* background-color:rgb(96, 177, 214) ; */
-    /* background: linear-gradient(0deg, rgb(89, 158, 125) -0%, rgb(96, 177, 214) 100%);  */
 
-}
 .card{
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.404);
@@ -107,4 +103,4 @@ h1{
 .accordion>.card>.card-header {
     background-color: rgba(0, 0, 0, 0.65);;
     border-radius: 0;
-    margin-bottom: -1px;
+}

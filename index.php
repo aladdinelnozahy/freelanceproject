@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +8,12 @@
     <title>portofolio</title>
     <!-- start style  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-
-    
-        
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/app.css">
 
 
     <!-- end style -->
@@ -38,28 +36,27 @@
                   <a class="dropdown-item" href="#headingOne">About</a>
                   <a class="dropdown-item" href="#headingTwo">Content</a>
                   <a class="dropdown-item" href="#headingThree">Experience</a>
+                  <a class="dropdown-item" href="#">Logout</a>
+
 
                 </div>
             </div>
-          <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
-              <a class="nav-link" href="#head">Portofolio <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#headingOne">About</a>
-            </li>
-          
-            <li class="nav-item">
-                <a class="nav-link" href="#headingTwo">Content</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#collapseThree">Experience</a>
-              </li>-->
-            <li class="nav-item">
-              <a class="nav-link" href="admin/addusers.html">Manage </a>
-            </li> 
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
+              <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item active">
+                  <a class="nav-link" href="..\portofolio.html">Portofolio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Content</a>
+                  </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="admin/dashboard.html">Dashboard </a>
+                </li>
+              </ul>
+            <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
@@ -83,7 +80,7 @@
     
     
     <div class="accordion " id="accordionExample">
-        <div class="card">
+        <div class="card oco">
           <div class="card-header " id="headingOne">
             <h2 class="mb-0">
               <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: white;">
@@ -98,7 +95,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card oco">
           <div class="card-header " id="headingTwo">
             <h2 class="mb-0">
               <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: white;" >
@@ -112,7 +109,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card oco">
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
               <button  class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: white;">
@@ -139,5 +136,8 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/app.js"></script>
+    </body>
 </html>
