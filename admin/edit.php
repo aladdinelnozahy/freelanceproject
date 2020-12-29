@@ -23,7 +23,7 @@
                         phone = '$phone'  ,
                         pass = '$password'  ,
                         role = '$role'   
-                        WHERE u_id ='$id'; ";
+                        WHERE id ='$id'; ";
             // mysqli_query($connection,$updated);
             $retval = mysqli_query( $connection, $updated);
             
