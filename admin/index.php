@@ -29,7 +29,7 @@
             $_SESSION['name']=$user['name'];
             $_SESSION['userId']=$user['id'];
             $_SESSION['role']=$user['role'];
-          header("location:dashboard.php?page=home.php");
+          header("location:dashboard.php?page=home");
           }else{
            getMessage('Invalid login');
            }
