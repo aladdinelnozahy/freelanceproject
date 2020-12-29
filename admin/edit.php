@@ -1,10 +1,12 @@
 <?php 
-    if(isset($_GET['u_id'])){
-        $id = $_GET['u_id'];
-        $getUser = "SELECT * FROM create_users  WHERE  u_id='$id' ";
+    if(isset($_GET['id'])){
+        $id = $_GET['id'];
+        $getUser = "SELECT * FROM create_users  WHERE  id='$id' ";
         $result = mysqli_query($connection,$getUser);
-        // $row = mysqli_fetch_row($result);
+       // var_dump( $result);
+       // $row = mysqli_fetch_row($result);
         $row = $result->fetch_assoc();
+        // var_dump($row);
         if (isset($_POST['submit'])){
 
             $username =$_POST['username'];
@@ -12,7 +14,6 @@
             $name =$_POST['name'];
             $phone =$_POST['phone'];
             $password =$_POST['password'];
-            $birthdate =$_POST['birthdate'];
             $role =$_POST['role'];
 
             $updated = "UPDATE create_users 
@@ -21,7 +22,6 @@
                         name = '$name'  ,
                         phone = '$phone'  ,
                         pass = '$password'  ,
-                        birtdate = '$birthdate' ,  
                         role = '$role'   
                         WHERE u_id ='$id'; ";
             // mysqli_query($connection,$updated);
@@ -84,17 +84,6 @@
             <label for="exampleInputPassword1">Git Link</label>
             <input type="link" class="form-control" id="exampleInputPassword1" >
         </div> -->
-        <div class="form-group">
-            <label>date of birth</label><br>
-            <input type="text" name="birthdate" id="datepicker" value ="<?= $row['birthdate'] ?>">
-
-            <!-- <script>
-            loadDropDown("day",31,1);
-            loadDropDown("month",12,1);
-            loadDropDown("year",2020,1900);
-            </script> -->
-        
-        </div>
         
         <div class="form-group">
             <label>user Role</label>
