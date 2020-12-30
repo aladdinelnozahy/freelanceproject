@@ -14,15 +14,17 @@
         <div class="collapse navbar-collapse" id="userdropdown">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="bordline" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <?php  if(session_id() != ''){ ?>
+                <?php  
+                if( isset($_SESSION['name']) && $_SESSION['name'] == true ){ ?>
                     <?= ucwords( $_SESSION['name']);  ?>
-              <?php  }else {?>
-                <?php  }?> 
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <!-- <a class="dropdown-item" href="logout.php">Dashboard</a> -->
                      <a class="dropdown-item" href="admin/logout.php">Logout</a>
                 </div>
+                <?php  }else {?>
+                    Hi, Guest!
+                <?php  }?> 
             </div>                        
         </div>       
 </nav>  
