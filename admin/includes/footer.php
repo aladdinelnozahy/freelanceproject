@@ -1,9 +1,4 @@
-<footer >
-  <p>Aladdin Elnozahy <br> &copy;copy-right:2020 <br>
-    <a id="a"  href="#"><i class="fab fa-facebook-f"></i></a>&nbsp;
-    <a id="a" href="#"><i class="fab fa-twitter"></i>  </a>&nbsp;
-    <a id="a" href="#"><i class="fab fa-instagram"></i> </a>
-</footer>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

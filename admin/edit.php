@@ -26,16 +26,21 @@
                         WHERE id ='$id'; ";
             // mysqli_query($connection,$updated);
             $retval = mysqli_query( $connection, $updated);
-            
+
             if(! $retval ) {
                die(getMessage('Could not update data... ') );
             }
             getMessage('Updated data successfully');
+            // header("Location:dashboard.php?page=home");
+
         }   
         //     getMessage('Updated data successfully');
         // }
 
    
+
+
+        
 
 ?>
 
@@ -107,7 +112,7 @@
 
         </div>
 
-    <button id ="fullwidth" type="submit" name="submit" class="btn btn-primary  " ><i class="fas fa-sign-in-alt"></i> Edit</button>
+    <button id ="fullwidth" type="submit" name="submit" class="btn btn-primary  " > <i class="fas fa-sign-in-alt"></i> aEdit</button>
 
 </form>
 <?php 

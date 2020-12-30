@@ -78,22 +78,31 @@ $(document).ready(function(){
            });
         }else {
             $('.result').hide();
-        }
+        } 
         
-
-
-          
-        // console.log(key);
-        // if(key == ''){
-        //     $('.result').hide();            
-        // }else{
-        //     $('.result').fadeIn().html(key);
-        // }
+    });
+});
+$(document).ready(function(){
+    $('#free').change(function(){
+        var id =$(this).val();
+        // alert(id);
+        $('.result').html(id)
     });
 });
 $(document).ready(function(){
     $('#free').change (function (){
-        var id = $(this).val();
-        $('.result').html(id);
+        var f_id = $(this).val();
+        $.ajax({
+            url:'show-freelancers.php',
+            type:'GET',
+            data:'ID='+f_id,
+     
+     
+            success:function(response){
+            $('.resulttbl').show();
+            $('.resulttbl').html(response);
+            }
+        });
+     
     });
 });

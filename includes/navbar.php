@@ -1,6 +1,4 @@
 <?php   session_start(); ?>
-
-
 <nav id="colo" class="back navbar navbar-expand-lg navbar-dark ">
     <div class="row">
         <div class="col-sm">
@@ -10,13 +8,16 @@
         </div>
     </div>
 
-    <div class="col-sm-6" >
+    <div class="col-sm" >
         <hr >                           
     </div>
         <div class="collapse navbar-collapse" id="userdropdown">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="bordline" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <?= ucwords( $_SESSION['name']); ?>
+                <?php  if(session_id() != ''){ ?>
+                    <?= ucwords( $_SESSION['name']);  ?>
+              <?php  }else {?>
+                <?php  }?> 
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <!-- <a class="dropdown-item" href="logout.php">Dashboard</a> -->

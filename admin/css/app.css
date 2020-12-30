@@ -1,31 +1,41 @@
 *{
-    
     margin: 0;
     padding: 0;
 }
 body{
-    height: 100%;
+     
+    margin: 0;
+    padding: 0;
+        height: 100%;
 		background: rgb(9, 226, 136);
         background: linear-gradient(0deg, rgb(48, 151, 101) 0%, rgb(4, 76, 109) 100%);
-        background-size: 100%;
-        font-family: 'Amiri', serif;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+        /* font-family: 'Amiri', serif; */
         font-size: 20px;
+        
+}
+/* a{
+    color: BLACK ;
+} */
+.container{
+    margin-top: 30px;
 }
 .admin{
 	color: black;
 	font-family: Georgia, 'Times New Roman', Times, serif ;
 }
-#colo{
-    background-color:rgb(0, 0, 0); ;
-
-    
+.mini{
+    margin: auto;
+    text-align: center;
 }
-
 .card {
     border-radius: 30px;
     /* background-color: rgb(0 0 0 / 0%); */
     color: black;
 }
+
 .log{
     background-color:rgba(0, 0, 0, 0.281); 
 
@@ -62,13 +72,24 @@ body{
     padding: 8px;
 }
 footer{
+    /* position:absolute; */
+    bottom:0;
+    width:100%;
+    color: black;
+    padding-top: 12px;
+    font-family: 'Amiri', serif;
+    text-align: center;
     background-color: rgba(220, 220, 224, 0.587);
+
+
+    /* background-color: rgba(220, 220, 224, 0.587);
     text-align: center;
     font-family: 'Amiri', serif;
     font-size: 15px;
     padding-top: 12px;
 	overflow: auto;
-	color: black;
+    color: black; */
+
 }
 #a{
     padding: 3px;
@@ -97,7 +118,10 @@ footer{
     margin-bottom: 5px;
     margin-top: 5px;
 }
-
+#tblhead{
+    color: white;
+    background-color: #343a40;
+}
 .result{
     background-color:rgb(255, 250, 250);
     margin: 2px 0;
@@ -105,6 +129,12 @@ footer{
     border: solid 2px  rgba(88, 86, 87, 0.973);
     border-radius: 10px;
     display: none;
+}
+.resulttbl{
+    margin-top: 10px;
+    border-radius: 20px;
+    /* background: rgb(15, 15, 15);
+    background: linear-gradient(0deg, rgba(15, 187, 101, 0.555) 0%, rgba(114, 103, 40, 0.582) 100%); */
 }
 
 .alert-success{
@@ -114,9 +144,45 @@ footer{
     padding: 5px 5px 0 5px;
     border-radius: 10px;
 }
-.birthdate{
-    margin: 10px;
-    border: solid rgba(0, 0, 0, 0.233) 0.5px;
-    border-radius: 15px;
+
+
+
+#userdropdown{
+    position: Absolute;
+    right: 80px; 
+}
+#colo{
+    background-color:rgba(0, 0, 0, 0.65); 
+}
+hr{ 
+    height: 2px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to left ,  #ffffffb2 , #e7402388);
+    /* border: 1px solid rgba(255, 255, 255, 0.377);   
+    color: rgba(255, 255, 255, 0.39);*/
+    margin-left: 160px;
+    width: 950px; 
+}
+#bordline{
+    border: 2px solid #ffffffb2;
+    border-radius: 20px;
+
+}
+.navbar-brand{
+    position: Absolute;
+    background-color:  #e7402388;
+    /* background-color: rgba(0, 0, 0, 0.356) ; */
+    border: 2px solid rgb(202 183 78);
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding :5px ;
+/* margin-top: px; */
+}
+#logo{
+    width: 40px;
+    /* height: 50px; */
+    margin-left: 20px
 }
 

@@ -6,16 +6,20 @@
     background-color:rgba(0, 0, 0, 0.65); 
 }
 body{  
-    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-position: center;  */
     /* color: white; */
-    height: 100%;
+    /* height: 100%; */
     /* background: rgb(4, 76, 109);  */
     background: rgb(9, 226, 136);
     background: linear-gradient(0deg, rgb(45, 110, 79) 10%, rgb(67, 130, 160) 90%); 
-    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;     
     /* font-family: 'Amiri', serif;
     font-size: 1.5rem; */
-    text-align: center;
+    /* text-align: center; */
 }
 .mini{ 
     border: solid 1px white;
@@ -28,23 +32,38 @@ body{
     color: white;
     background-color: rgba(0, 0, 0, 0.404);
     color: white;
-
 }
+
+
+
+hr{ 
+    height: 2px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to left ,  #ffffffb2 , #e7402388);
+    /* border: 1px solid rgba(255, 255, 255, 0.377);   
+    color: rgba(255, 255, 255, 0.39);*/
+    margin-left: 160px;
+
+    width: 920px; }
 #a{
     padding: 3px;
     color: rgb(14, 5, 5);
+    bottom: 0px; 
+
 }
 
 footer{
-    background-color: rgba(154, 154, 155, 0.587);
-    text-align: center;
-    font-family: 'Amiri', serif;
-    font-size: 15px;
-    padding-top: 12px;
-    overflow: auto;
+    /* position:absolute; */
+    bottom:0;
+    width:100%;
     color: black;
-}
+    padding-top: 12px;
+    font-family: 'Amiri', serif;
+    text-align: center;
+    background-color: rgba(220, 220, 224, 0.587);
 
+}
         
 
 #imgsize{
@@ -64,6 +83,9 @@ h1{
 }
 #portofolio{
     background-image: url("/media/cover.jpg");
+    background-repeat: no-repeat;
+background-size: cover;
+    /* width: 100%; */
     text-align: center;
     text-shadow: 1px 1px #fff;
 
@@ -103,4 +125,61 @@ h1{
 .accordion>.card>.card-header {
     background-color: rgba(0, 0, 0, 0.65);;
     border-radius: 0;
+}
+.jumbotron{
+    margin-top:  100px;
+    border-radius: 50px;
+}
+#bordline{
+    border: 2px solid #ffffffb2;
+    border-radius: 20px;
+    
+}
+#userdropdown{
+    
+    position: Absolute;
+    right: 80px; 
+}
+#logo{
+width: 40px;
+/* height: 50px; */
+margin-left: 20px
+
+}  
+.navbar-brand{
+    position: Absolute;
+    background-color:  #e7402388;
+    /* background-color: rgba(0, 0, 0, 0.356) ; */
+    border: 2px solid rgb(202 183 78);
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding :5px ;
+/* margin-top: px; */
+}
+
+/* form css */
+.contact{
+    margin:auto;
+    /* text-align: center; */
+}
+.form-group{
+    padding: 10px;
+    margin: auto;
+    /* text-align: center; */
+}
+#contacth{
+    font-size:2em;
+    font-style: bold;
+}
+.formc{
+    color:black;
+    font-size: 1.5em;
+}
+.result{
+    color: white;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.616);
+    border-radius: 10px;
+    display: none;
 }
