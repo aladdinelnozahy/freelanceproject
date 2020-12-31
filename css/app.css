@@ -19,7 +19,7 @@ body{
     background-position: center;     
     /* font-family: 'Amiri', serif;
     font-size: 1.5rem; */
-    /* text-align: center; */
+    text-align: center;
 }
 .mini{ 
     border: solid 1px white;
@@ -113,6 +113,7 @@ background-size: cover;
 }
 
 .card{
+    margin: auto;
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.404);
     color: white;
@@ -152,9 +153,11 @@ margin-left: 20px
     /* background-color: rgba(0, 0, 0, 0.356) ; */
     border: 2px solid rgb(202 183 78);
     border-radius: 20px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     margin-left: 20px;
     padding :5px ;
+    height:50px;
+
 /* margin-top: px; */
 }
 
@@ -183,3 +186,28 @@ margin-left: 20px
     border-radius: 10px;
     display: none;
 }
+
+
+
+.hrstyle{
+    margin: auto;
+    /* width: 80%; */
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: linear-gradient(to right, rgb(11, 2, 85), rgb(216, 67, 89), rgb(11, 2, 85));
+}
+.mar{
+    margin-top: 30px;
+    font-family: fantasy;
+}
+.display-4{
+    font-family: fantasy;
+}
+.fonto{
+    font-family:serif;
+    font-size: 1.3em;
+color: white;
+}
+#mission{
+margin-left:130px ;}

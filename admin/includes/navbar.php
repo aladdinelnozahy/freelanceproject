@@ -1,11 +1,9 @@
 <?php   session_start(); ?>
-
-
 <nav id="colo" class="back navbar navbar-expand-lg navbar-dark ">
     <div class="row">
         <div class="col-sm">
             <img id="logo" src="media/free2.png" alt="freelancing logo">
-            <p class="navbar-brand"  >Arab freelancers</p>
+            <a href="..\index.php" class="btn navbar-brand" ><p class=""  >Arab freelancers</p><a>
         
         </div>
     </div>
@@ -19,8 +17,8 @@
                 <?= ucwords( $_SESSION['name']); ?>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <!-- <a class="dropdown-item" href="logout.php">Dashboard</a> -->
-                     <a class="dropdown-item" href="admin/logout.php">Logout</a>
+                    <a class="dropdown-item" href="direct.php">Profile</a>
+                     <a class="dropdown-item" href="logout.php">Logout</a>
                 </div>
             </div>                        
         </div>       

@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-sm">
             <img id="logo" src="media/free2.png" alt="freelancing logo">
-            <p class="navbar-brand"  >Arab freelancers</p>
+            <a href="..\index.php" class="btn navbar-brand" ><p class=""  >Arab freelancers</p><a>
         
         </div>
     </div>
@@ -24,6 +24,10 @@
                 </div>
                 <?php  }else {?>
                     Hi, Guest!
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a href="signup.php" class="btn btn-danger"> signup</a>
+                     <a class="dropdown-item" href="admin/index.php">Login</a>
+                </div>
                 <?php  }?> 
             </div>                        
         </div>       

@@ -11,7 +11,7 @@
     </a>
 
     <a href="dashboard.php?page=freelancers" class="list-group-item list-group-item-action">
-    <i class="fas fa-briefcase"> </i>  Freelancers <span class="badge badge-danger"><?= getTotals('freelancers') ?>
+    <i class="fas fa-briefcase"> </i>  Freelancers <span class="badge badge-danger"><?= getTotals('freelancers') ?></span>
     </a>
     
 </div>

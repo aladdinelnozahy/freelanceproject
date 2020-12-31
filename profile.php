@@ -18,7 +18,7 @@ $skilldata =mysqli_fetch_array($querySkills);
     
     <div class="center" id="portofolio" style="background-image: url('media/cover.jpg');">
         
-        <img id="imgsize" src="media/co.png" alt="profile img">
+        <img id="imgsize" src="media/co.png" alt="profile img" >
         <h1>           
         <?= ucwords( $data['f_name']); ?>
 
@@ -70,7 +70,7 @@ $skilldata =mysqli_fetch_array($querySkills);
           </div>
       
         </div>
-        <div class="card oco">
+        <!-- <div class="card oco">
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
               <button  class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: white;">
@@ -86,12 +86,9 @@ $skilldata =mysqli_fetch_array($querySkills);
           </div>
 
           
-        </div>
+        </div> -->
       </div>
     
-      <div class="contactform">
-            </form>
-      </div>
 
 
       <div class="card contact col-md-5" >
@@ -100,14 +97,14 @@ $skilldata =mysqli_fetch_array($querySkills);
             <div class="form-group" style="width: 25rem;">
               
               <label >Your Name :</label>
-              <input type="text" name="" id="" class="form-control"  placeholder="Enter your Name">
+              <input type="text" name="" id="" class="form-control"  >
           
               <label for="exampleInputEmail1">Your Email :</label>
-              <input type="" name="" class="form-control" placeholder="Enter your Email Address" >
+              <input type="" name="" class="form-control"  >
 
               <label for="exampleInputEmail1">Your Message :</label>
 
-              <textarea id="" name="" rows="4" cols="30" placeholder="type your message"></textarea>
+              <textarea id="" name="" rows="4" cols="30" ></textarea>
               <button id ="" type="submit" name="submit" class="btn btn-success  " ><i class="fas fa-sign-in-alt"></i> Send</button>
                           
 

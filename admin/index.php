@@ -17,7 +17,7 @@
     // login
 
 
-            $login = "SELECT * FROM create_users
+        $login = "SELECT * FROM create_users
                 WHERE (username ='$userName' OR email='$userName' )
                 AND pass='$password'";
         $check = mysqli_query($connection,$login);

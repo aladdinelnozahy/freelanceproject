@@ -21,9 +21,9 @@
     if(empty($password)){
       $errors[]='Password Field Is Required';
     }
-    // checkUser('$username','$email','create_users',''){
+    // checkUser('$username','$email','create_users','');
 
-    // }
+    
     $sql ="SELECT username,email from create_users WHERE username ='$username'
          OR email ='$email'";
     $result = mysqli_query($connection,$sql);
@@ -44,6 +44,8 @@
       
 
       getMessage('User Created successfully ');
+      header("Location:addusers.php");
+
     }
   }
    
