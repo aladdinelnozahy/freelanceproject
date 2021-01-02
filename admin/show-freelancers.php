@@ -6,6 +6,7 @@
         $query = mysqli_query($connection,$sql);
         $row = mysqli_fetch_array($query);
     }
+    
 ?>
 <table class="table table-bordered">
     <thead>
@@ -22,7 +23,13 @@
         <td><?= $row['f_email']?></td>
         <td><?= $row['f_phone']?></td>
         <td>
-        <img src="uploaded/<?= $row=['photo'];?>" width="50" height="50">
+        <?php if($row['photo']){?>
+        <img src="uploaded/<?= $row['photo'];?>" width="50" height="50">
+        <?php }else{?>
+            <img src="uploaded/img.jfif" width="50" height="50">
+
+            <?php }?>
+
         </td>
     </tr>
     </tbody>

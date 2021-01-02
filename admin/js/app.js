@@ -1,18 +1,57 @@
 
 //check password with confirm 
-function checkPassword(){
-    var pass =document.querySelector("#password");
-    var confirm = document.querySelector("#confirm");
-    // console.log('pass =' + document.getElementById("first") +'confirm = '+ confirm);
+function checkPassword(form){
+//     var pass =document.getElementById("password1");
+//     var confirm = document.querySelector("#confirm2");
+       pass = form.password1.value;    
+       con = form.confirm2.value; 
+    //console.log('element pass =' + document.getElementById("password1").value +'confirm = '+ document.getElementById("confirm2").value);
     
+    //console.log('query pass =' + document.querySelector("#password1") +'confirm = '+ document.querySelector("#confirm2"));
 
-     if (pass != confirm){
+     if (pass == con){
+        return true;
+     }else{
+         //  alert('hi');
         // console.log('mesh zay b3d');
         var msg =" Password and Confirm Password dosen't Match ";
-        $('#passError').fadeIn(1000).html(msg).delay(1000).fadeOut(2000);
+        //alert(pass+ 'hi'+con);
 
+        $('#passError').fadeIn(1000).html(msg).delay(1000).fadeOut(2000);
+       // event.preventDefault();
+    return false ;
      }
 }
+
+    //  function checkPassword(form) { 
+    //     console.log('element pass =' + document.getElementById("password1").value +'confirm = '+ document.getElementById("confirm2").value);
+    
+    //     console.log('query pass =' + document.querySelector("password1") +'confirm = '+ document.querySelector("#confirm2"));
+    //     password1 = form.password1.value;    
+    //     password2 = form.confirm2.value; 
+ 
+    //     // If password not entered 
+    //     if (password1 == '') 
+    //         alert ("Please enter Password"); 
+              
+    //     // If confirm password not entered 
+    //     else if (password2 == '') 
+    //         alert ("Please enter confirm password"); 
+              
+    //     // If Not same return False.     
+    //     else if (password1 != password2) { 
+    //         alert ("\nPassword did not match: Please try again...") 
+    //         return false; 
+    //     } 
+
+    //     // If same return True. 
+    //     else{ 
+    //         alert("Password Match: Welcome to GeeksforGeeks!") 
+    //         return true; 
+    //     } 
+    // } 
+    
+
 //date of birth drop down menu
 // function loadDropDown(defopt,start,end){
 //     document.write("<select class='birthdate'>");

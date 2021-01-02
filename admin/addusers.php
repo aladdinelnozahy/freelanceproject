@@ -1,5 +1,5 @@
 <?php 
-
+// echo '<pre>';print_r ($_GET); echo '</pre>';
   if(isset($_POST['submit'])){
     
     $username =$_POST['username'];
@@ -41,10 +41,10 @@
       '$role')";
       mysqli_query($connection,$addUser);
 
-      
+        
 
       getMessage('User Created successfully ');
-      header("Location:addusers.php");
+     // header("Location:dashboard.php?page=addusers");
 
     }
   }
@@ -54,7 +54,7 @@
 <div class="card-body">
   
         <!-- onsubmit="checkPassword();return false" -->
-            <form  method="post" onsubmit="checkPassword();" class="formcenter text-center">
+            <form  method="post" onsubmit="return checkPassword(this);" class="formcenter text-center">
               <?php 
                 if (!empty($errors)){
               ?>
@@ -81,7 +81,7 @@
                 <div class="form-check form-check-inline">
                   <div class="form-group">
                     <label > Name</label>
-                    <input type="text" name="name" id="name" class="form-control" >
+                    <input type=text name=name id=name class="form-control" >
                   </div>
                   <div class="form-group">
                     <label > Phone </label>
@@ -93,12 +93,12 @@
                 <div class="form-check form-check-inline">
                       <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" name="password" class="form-control" id= "password" >
+                        <input type="password" name="password" class="form-control" id= password1 >
                       </div>
                       
                       <div class="form-group ">
                         <label for="exampleInputEmail1"> Confirm Password</label>
-                        <input type="password" name="confirm" class="form-control" id=" confirm"  >
+                        <input type="password" name="confirm" class="form-control" id=confirm2  >
                       </div>
                       
                 </div>

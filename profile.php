@@ -15,6 +15,7 @@ $skilldata =mysqli_fetch_array($querySkills);
 
 
 ?>
+
     
     <div class="center" id="portofolio" style="background-image: url('media/cover.jpg');">
         
@@ -70,7 +71,7 @@ $skilldata =mysqli_fetch_array($querySkills);
           </div>
       
         </div>
-        <!-- <div class="card oco">
+        <div class="card oco">
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
               <button  class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: white;">
@@ -86,30 +87,58 @@ $skilldata =mysqli_fetch_array($querySkills);
           </div>
 
           
-        </div> -->
+        </div>
       </div>
     
 
 
       <div class="card contact col-md-5" >
-        <div class="card-body formc">
-          <h2 id="contacth">contact</h2>
-            <div class="form-group" style="width: 25rem;">
-              
-              <label >Your Name :</label>
-              <input type="text" name="" id="" class="form-control"  >
-          
-              <label for="exampleInputEmail1">Your Email :</label>
-              <input type="" name="" class="form-control"  >
 
-              <label for="exampleInputEmail1">Your Message :</label>
 
-              <textarea id="" name="" rows="4" cols="30" ></textarea>
-              <button id ="" type="submit" name="submit" class="btn btn-success  " ><i class="fas fa-sign-in-alt"></i> Send</button>
-                          
+          <?php 
+          // var_dump($data);
+            if(isset($_POST['c_name'])){
+              $c_name =$_POST['c_name'];
+              $c_email =$_POST['c_email'];
+              $c_message =$_POST['c_message'];
+              $f_id=$data['f_id'];
 
-            </div>
-        </div>
+
+
+              $sql ="INSERT INTO `contact`(`c_name`, `c_email`, `c_message`, `f_id`) 
+                     VALUES ('$c_name','$c_email','$c_message',$f_id)";
+                            mysqli_fetch_array($query);
+
+              if(mysqli_query($connection,$sql)){
+                echo'Thanks';
+              }else{
+                echo 'Error Inserting Data Try again';
+              }
+
+            }
+
+          ?>
+
+        <form method="post">
+          <div class="card-body formc">
+            <h2 id="contacth">contact</h2>
+              <div class="form-group" style="width: 25rem;">
+                
+                <label >Your Name :</label>
+                <input type="text" name="c_name"  class="form-control"  >
+            
+                <label for="c_email">Your Email :</label>
+                <input type="email" name="c_email" class="form-control"  >
+
+                <label for="exampleInputEmail1">Your Message :</label>
+                <textarea  name="c_message" rows="4" cols="30" ></textarea>
+
+                <button  type="submit" name="submit" class="btn btn-success  " ><i class="fas fa-sign-in-alt"></i> Send</button>
+                            
+
+              </div>
+          </div>
+        </form>
       </div>
 
 

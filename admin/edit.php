@@ -32,7 +32,10 @@
             }
             getMessage('Updated data successfully');
             // header("Location:dashboard.php?page=home");
-
+            $result = mysqli_query($connection,$getUser);
+            // var_dump( $result);
+            // $row = mysqli_fetch_row($result);
+             $row = $result->fetch_assoc();
         }   
         //     getMessage('Updated data successfully');
         // }

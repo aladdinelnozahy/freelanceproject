@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
 
     $path =$_FILES['photo']['tmp_name'];
     $filename = $_FILES['photo']['name'];
-    $dir = dirname(__FILE__) . '/Admin/uploaded/';
+    $dir = dirname(__FILE__) . '/admin/uploaded/';
 
     move_uploaded_file($path,$dir.$filename) ;
 

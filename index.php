@@ -1,6 +1,14 @@
 <?php include 'includes/header.php' ?>
 <?php include 'includes/navbar.php' ?>	
-<a href="signup.php" class="btn btn-danger"> signup</a>
+<div id="abutton" class="btn-group btn-group-lg" role="group" aria-label="...">
+	<a  href="signup.php" class="btn btn-danger"> Signup</a>
+	<a id="onh"  href="" class="btn btn-warning"> Guest </a>
+	<a  href="logout.php" class="btn btn-danger"> logout</a>
+
+	<a  href="admin/index.php" class="btn btn-success"> Login</a>
+</div>
+
+
 <div class="container">
 	<div class="jumbotron">
 		<h1 class="display-4">Welcome To Arab Freelancers</h1>
