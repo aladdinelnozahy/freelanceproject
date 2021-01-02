@@ -143,7 +143,7 @@ $skilldata =mysqli_fetch_array($querySkills);
 
 
       
-      <a  href=""><button id="goup"  type="button" class="btn btn-warning"> <i class="fas fa-arrow-up"></i> </button> </a>
+      <a  href="" ><button id="goup"  type="button" class="btn btn-warning"> <i class="fas fa-arrow-up"></i> </button> </a>
 
 
 <?php include 'includes/footer.php' ?>
