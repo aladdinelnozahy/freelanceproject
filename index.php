@@ -1,17 +1,16 @@
 <?php include 'includes/header.php' ?>
 <?php include 'includes/navbar.php' ?>	
-<div id="abutton" class="btn-group btn-group-lg" role="group" aria-label="...">
+<!-- <div id="abutton" class="btn-group btn-group-lg" role="group" aria-label="...">
 	<a  href="signup.php" class="btn btn-danger"> Signup</a>
-	<a id="onh"  href="" class="btn btn-warning"> Guest </a>
 	<a  href="logout.php" class="btn btn-danger"> logout</a>
 
 	<a  href="admin/index.php" class="btn btn-success"> Login</a>
-</div>
+</div> -->
 
 
 <div class="container">
 	<div class="jumbotron">
-		<h1 class="display-4">Welcome To Arab Freelancers</h1>
+		<h1 class="mar display-4">Welcome To Arab Freelancers</h1>
 		<input type="text" id="search" placeholder="search" class="form-control">
   			<div class="result" ></div>
 	</div>

@@ -55,7 +55,7 @@ if(isset($_POST['submit'])){
 <br>
 <br>
 <div class="card" style="width:50em;">
-<h1> Sign Up</h1>
+<h1 class="mar"> Sign Up</h1>
     <div class="card-body">
    
     
